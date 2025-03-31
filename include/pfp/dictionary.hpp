@@ -148,7 +148,7 @@ public:
     verbose("Computing ISA of dictionary");
     _elapsed_time(
       {
-        phrase_to_rank.resize(n_phrases());
+        phrase_to_rank.resize(n_phrases() + 1);
         for(size_t i = 0; i < saD.size(); ++i){
           if (b_d[saD[i]])
             phrase_to_rank[rank_b_d(saD[i])] = i;
